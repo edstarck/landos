@@ -1,0 +1,353 @@
+html.js .loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #0e061b; }
+  html.js .loader .loader_inner {
+    background-image: url("../img/preloader.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }
+
+body {
+  font-family: "SFUIDisplayRegular", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green; }
+
+.hidden {
+  display: none; }
+
+.wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.gradient-1 {
+  background: linear-gradient(48deg, #145d63, #6b0081 0, #1f0e93 90%); }
+
+.gradient-2 {
+  z-index: 2;
+  opacity: 0;
+  background: #ffd520;
+  background: linear-gradient(48deg, #1f0e93, #145d63 0, #6b0081 90%);
+  animation: gradient 12s ease-in-out infinite; }
+
+.welcome {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: center; }
+  .welcome__logo {
+    width: 300px;
+    margin-top: auto;
+    z-index: 20; }
+    .welcome__logo img {
+      width: 300px; }
+  .welcome__title {
+    font-size: 48px;
+    color: #fff; }
+  .welcome__description {
+    z-index: 20; }
+  .welcome__slogan {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 20px 0; }
+  .welcome__nav {
+    margin-top: auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    z-index: 20; }
+  .welcome__nav-item {
+    margin: 0 22px; }
+  .welcome__nav-link {
+    color: #14ada4;
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;
+    letter-spacing: .034em;
+    line-height: 30px;
+    border-bottom: 1px dashed #14ada4;
+    transition: border-bottom .4s ease; }
+    .welcome__nav-link:hover {
+      border-bottom: 1px dashed transparent; }
+  .welcome__scroll {
+    position: relative;
+    width: 100px;
+    height: 70px;
+    margin: 60px auto 40px;
+    z-index: 20; }
+  .welcome__scroll__mouse {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 18px;
+    height: 30px;
+    margin-left: -9px;
+    border: 2px solid #ffffff;
+    border-radius: 9px;
+    display: block;
+    box-sizing: border-box; }
+  .welcome__scroll__wheel {
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 6px;
+    width: 4px;
+    height: 7px;
+    background: #ffffff;
+    border-radius: 2px;
+    transform-origin: 50% 0; }
+  .welcome__scroll__arrow {
+    position: absolute;
+    top: 35px; }
+    .welcome__scroll__arrow::before {
+      position: absolute;
+      left: 50%;
+      content: '';
+      width: 8px;
+      height: 10px;
+      top: 0;
+      margin-left: -4px;
+      background-image: url(../img/icons/arrow_down.svg);
+      background-repeat: no-repeat;
+      animation: upDown 1.5s ease-out infinite; }
+
+.provide {
+  width: 100%;
+  padding: 75px 0;
+  background-color: #4731d4; }
+  .provide__title {
+    margin-top: 0;
+    font-family: "IntroBold", sans-serif;
+    font-size: 40px;
+    color: #ffffff; }
+  .provide__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .provide__list {
+    margin: 0;
+    padding-left: 15px; }
+  .provide__item {
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px; }
+  .provide__banner {
+    width: 400px; }
+    .provide__banner img {
+      max-width: 100%; }
+
+.offers {
+  width: 100%;
+  padding: 75px 0;
+  background-color: #ffffff; }
+  .offers__heading {
+    margin-top: 0;
+    font-family: "IntroBold", sans-serif;
+    font-size: 40px;
+    color: #272727;
+    text-align: center; }
+  .offers__grid {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    text-align: center; }
+  .offers__item {
+    width: 25%;
+    margin-bottom: 60px; }
+  .offers__link {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center; }
+    .offers__link img {
+      max-width: 100%; }
+  .offers__title {
+    margin-top: 20px;
+    color: #272727;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px; }
+  .offers__others {
+    text-align: center;
+    color: #272727;
+    line-height: 58px;
+    font-size: 26px; }
+
+.partners {
+  width: 100%;
+  padding: 75px 0 15px 0;
+  background-color: #0e061b; }
+  .partners__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .partners__title {
+    margin-top: 0;
+    margin-bottom: 75px;
+    font-family: "IntroBold", sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center; }
+  .partners__item {
+    width: 50%;
+    margin-bottom: 60px; }
+  .partners__link {
+    display: block;
+    width: 300px;
+    height: 120px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.contacts {
+  width: 100%;
+  padding: 75px 0;
+  background-color: #40a8af; }
+  .contacts__row {
+    display: flex;
+    justify-content: center; }
+  .contacts__column {
+    margin: 0 15px; }
+  .contacts__address {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center; }
+
+.menu-dot {
+  position: fixed;
+  width: 98px;
+  height: 170px;
+  margin-top: -85px;
+  top: 50%;
+  right: 40px;
+  z-index: 400;
+  display: block; }
+  .menu-dot__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  .menu-dot__item {
+    position: relative;
+    text-align: right; }
+    .menu-dot__item:first-child .menu-dot__link::after {
+      background-color: transparent;
+      background-image: url(../img/icons/icon_home.svg);
+      background-repeat: no-repeat;
+      border-radius: 0; }
+    .menu-dot__item:first-child .menu-dot__link:hover::after {
+      background-image: url(../img/icons/icon_home_pure.svg); }
+    .menu-dot__item:first-child .menu-dot__link--active::after {
+      background-image: url(../img/icons/icon_home_pure.svg); }
+  .menu-dot__link {
+    position: relative;
+    color: #ccc;
+    height: 30px;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: .034em;
+    transition: all .4s ease;
+    padding-right: 20px;
+    text-decoration: none;
+    outline: 0; }
+    .menu-dot__link span {
+      opacity: 0;
+      transition: opacity .4s ease; }
+    .menu-dot__link::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      right: 0;
+      margin-top: -5px;
+      width: 10px;
+      height: 10px;
+      background-color: #ccc;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .4s ease; }
+    .menu-dot__link:hover::after {
+      background-color: #6b0081; }
+    .menu-dot__link:hover span {
+      opacity: 1; }
+    .menu-dot__link--active::after {
+      background-color: #6b0081; }
+
+@-webkit-keyframes upDown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); } }
+
+@keyframes upDown {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px); } }
+
+@-webkit-keyframes gradient {
+  0%, 100% {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+
+@keyframes gradient {
+  0%, 100% {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
