@@ -49,7 +49,7 @@ body textarea:required:valid
 .wrap
 	max-width: 1170px
 	margin: 0 auto
-	padding: 0 15px
+	padding: 0 1.5rem
 
 .gradient
 	position: absolute
@@ -79,7 +79,7 @@ body textarea:required:valid
 	text-align: center
 	&__logo
 		width: 300px
-		margin-top: 30px
+		margin-top: 100px
 		z-index: 20
 		@media(max-width: 767px)
 			width: 230px
@@ -170,11 +170,12 @@ body textarea:required:valid
 	background-color: #4731d4
 	&__title
 		width: 100%
-		margin-top: 115px
+		margin-top: 100px
 		font-family: "IntroBold", sans-serif
 		font-size: 40px
 		color: #ffffff
 		text-align: left
+		line-height: 1.4
 		@media(max-width: 1150px)
 			text-align: center
 		@media(max-width: 900px)
@@ -182,7 +183,6 @@ body textarea:required:valid
 		@media(max-width: 767px)
 			margin-top: 50px
 			font-size: 26px
-			line-height: 32px
 	&__row
 		display: flex
 		justify-content: space-between
@@ -209,18 +209,21 @@ body textarea:required:valid
 
 .offers
 	width: 100%
-	padding: 75px 0
+	padding: 75px 0 50px 0
 	background-color: #ffffff
 	&__heading
 		max-width: 800px
 		margin: 0 auto
+		padding: 0 2rem
 		font-family: "IntroBold", sans-serif
 		font-size: 40px
 		color: #272727
 		text-align: center
+		line-height: 1.4
 		@media(max-width: 560px)
 			font-size: 30px
-			line-height: 36px
+		@media(max-width: 320px)
+			padding: 0
 	&__grid
 		display: flex
 		justify-content: flex-start
@@ -263,7 +266,7 @@ body textarea:required:valid
 
 .partners
 	width: 100%
-	padding: 75px 0 15px 0
+	padding: 75px 0 50px 0
 	background-color: #0e061b
 	&__grid
 		display: flex
@@ -279,10 +282,10 @@ body textarea:required:valid
 		font-size: 40px
 		color: #ffffff
 		text-align: center
+		line-height: 1.4
 		@media(max-width: 560px)
 			margin-bottom: 40px
 			font-size: 30px
-			line-height: 36px
 	&__item
 		width: 50%
 		margin-bottom: 60px
@@ -298,7 +301,7 @@ body textarea:required:valid
 		background-repeat: no-repeat
 		background-position: center
 		@media(max-width: 767px)
-			width: 250px
+			width: 230px
 
 .contacts
 	width: 100%

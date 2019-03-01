@@ -48,7 +48,7 @@ body textarea:required:valid {
 .wrap {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0 15px; }
+  padding: 0 1.5rem; }
 
 .gradient {
   position: absolute;
@@ -77,7 +77,7 @@ body textarea:required:valid {
   text-align: center; }
   .welcome__logo {
     width: 300px;
-    margin-top: 30px;
+    margin-top: 100px;
     z-index: 20; }
     @media (max-width: 767px) {
       .welcome__logo {
@@ -172,11 +172,12 @@ body textarea:required:valid {
   background-color: #4731d4; }
   .provide__title {
     width: 100%;
-    margin-top: 115px;
+    margin-top: 100px;
     font-family: "IntroBold", sans-serif;
     font-size: 40px;
     color: #ffffff;
-    text-align: left; }
+    text-align: left;
+    line-height: 1.4; }
     @media (max-width: 1150px) {
       .provide__title {
         text-align: center; } }
@@ -186,8 +187,7 @@ body textarea:required:valid {
     @media (max-width: 767px) {
       .provide__title {
         margin-top: 50px;
-        font-size: 26px;
-        line-height: 32px; } }
+        font-size: 26px; } }
   .provide__row {
     display: flex;
     justify-content: space-between;
@@ -216,19 +216,23 @@ body textarea:required:valid {
 
 .offers {
   width: 100%;
-  padding: 75px 0;
+  padding: 75px 0 50px 0;
   background-color: #ffffff; }
   .offers__heading {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 2rem;
     font-family: "IntroBold", sans-serif;
     font-size: 40px;
     color: #272727;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.4; }
     @media (max-width: 560px) {
       .offers__heading {
-        font-size: 30px;
-        line-height: 36px; } }
+        font-size: 30px; } }
+    @media (max-width: 320px) {
+      .offers__heading {
+        padding: 0; } }
   .offers__grid {
     display: flex;
     justify-content: flex-start;
@@ -274,7 +278,7 @@ body textarea:required:valid {
 
 .partners {
   width: 100%;
-  padding: 75px 0 15px 0;
+  padding: 75px 0 50px 0;
   background-color: #0e061b; }
   .partners__grid {
     display: flex;
@@ -290,12 +294,12 @@ body textarea:required:valid {
     font-family: "IntroBold", sans-serif;
     font-size: 40px;
     color: #ffffff;
-    text-align: center; }
+    text-align: center;
+    line-height: 1.4; }
     @media (max-width: 560px) {
       .partners__title {
         margin-bottom: 40px;
-        font-size: 30px;
-        line-height: 36px; } }
+        font-size: 30px; } }
   .partners__item {
     width: 50%;
     margin-bottom: 60px; }
@@ -313,7 +317,7 @@ body textarea:required:valid {
     background-position: center; }
     @media (max-width: 767px) {
       .partners__link {
-        width: 250px; } }
+        width: 230px; } }
 
 .contacts {
   width: 100%;
