@@ -35,7 +35,6 @@ $(window).load(function() {
 
 	var controllerMenu = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: .5}});
 	var timeHome = $('#welcome').innerHeight(),
-			timeFond = $('#provide').innerHeight(),
 			timeDevelopment = $('#offers').innerHeight(),
 			timeTeam = $('#partners').innerHeight(),
 			timePortfolio = $('#contacts').innerHeight();
@@ -43,16 +42,13 @@ $(window).load(function() {
 	new ScrollMagic.Scene({triggerElement: "#welcome", duration: timeHome})
 		.setClassToggle("#high1", "menu-dot__link--active")
 		.addTo(controllerMenu);
-	new ScrollMagic.Scene({triggerElement: "#provide", duration: timeFond})
+	new ScrollMagic.Scene({triggerElement: "#offers", duration: timeDevelopment})
 		.setClassToggle("#high2", "menu-dot__link--active")
 		.addTo(controllerMenu);
-	new ScrollMagic.Scene({triggerElement: "#offers", duration: timeDevelopment})
+	new ScrollMagic.Scene({triggerElement: "#partners", duration: timeTeam})
 		.setClassToggle("#high3", "menu-dot__link--active")
 		.addTo(controllerMenu);
-	new ScrollMagic.Scene({triggerElement: "#partners", duration: timeTeam})
-		.setClassToggle("#high4", "menu-dot__link--active")
-		.addTo(controllerMenu);
 	new ScrollMagic.Scene({triggerElement: "#contacts", duration: timePortfolio})
-		.setClassToggle("#high5", "menu-dot__link--active")
+		.setClassToggle("#high4", "menu-dot__link--active")
 		.addTo(controllerMenu);
 });
