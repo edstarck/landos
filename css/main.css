@@ -76,9 +76,6 @@ body textarea:required:valid {
   width: 100%;
   height: 100vh;
   text-align: center; }
-  @media (max-width: 767px) {
-    .welcome {
-      height: auto; } }
   .welcome__logo {
     width: 300px;
     margin-top: auto;
